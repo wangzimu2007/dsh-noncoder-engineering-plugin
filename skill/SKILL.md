@@ -135,6 +135,7 @@ user-invocable: true
 - 新目标：先确认旧 goal 状态，避免一个会话两个 goal
 
 详细短语表和示例见 `references/GOAL-TRIGGERS.md`。
+
 ## 四类阻塞条件
 
 只有以下情况允许提问，一次最多 3 个，每个必须带推荐默认值：
