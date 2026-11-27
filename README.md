@@ -1,24 +1,44 @@
 # dsh-noncoder-engineering
 
-DSH Host-only plugin for the **noncoder engineering** skill.
+DSH Host-only plugin for the **noncoder engineering** skill, version 1.2.
 
 It registers an embedded skill with `ctx.skills.register()` so DSH users can install one plugin instead of copying a skill directory manually.
 
-## What it does
+## v1.2 features
 
-- Technical decisions are made by the agent
-- Non-blocking by default
-- Only destructive/irreversible actions, credentials/payment/legal, mutually exclusive product directions, or unclear acceptance justify a question
-- Writes `BRIEF.md`, `.noncoder/ASSUMPTIONS.md`, `.noncoder/OPEN_QUESTIONS.md`
-- With `/goal` or a complete task brief: runs to completion, then reports and suggests
+- Demo-first: smallest runnable version and screenshots
+- Plain-language decision log
+- Vague-feedback translator
+- MVP scope lock and `LATER.md`
+- Automatic backup and `RECOVERY.md`
+- Portable/zero-install delivery
+- Desktop shortcut guidance
+- Error translation
+- 5-step user acceptance list
+- Data/privacy notes
+- Verified / unverified / unverifiable status
+- Milestone previews without blocking
+- Automatic handoff on context pressure
 
-## Install locally
+## Install
+
+### Local
+
+Use DSH's plugin manager to install this directory as a bundle:
 
 ```text
 D:\AI\dsh-noncoder-engineering-plugin
 ```
 
-Use DSH's plugin manager to install this directory as a bundle.
+### From GitHub
+
+Clone:
+
+```bash
+git clone https://github.com/wangzimu2007/dsh-noncoder-engineering-plugin.git
+```
+
+Then install the directory with the DSH plugin manager.
 
 ## Structure
 
@@ -33,6 +53,11 @@ locale/zh.json
 docs/DETAIL.md
 icon.svg
 ```
+
+## Notes
+
+- The embedded skill and a manually copied `noncoder-engineering` skill share the same name. Do not install both; remove the manual copy if you want the plugin version.
+- The plugin registers instructions only; capabilities depend on the current DSH composition and tools.
 
 ## License
 

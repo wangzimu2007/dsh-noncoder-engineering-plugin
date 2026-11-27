@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Noncoder engineering",
-    "description": "Turn product ideas into working software without being asked technical questions. Runs to completion, records assumptions, and reports decisions at the end.",
+    "description": "Turn product ideas into working software without technical questions. v1.2: demo-first, plain-language decisions, scope lock, backup/restore, user acceptance.",
     "detail": "docs/DETAIL.md"
   }
 }

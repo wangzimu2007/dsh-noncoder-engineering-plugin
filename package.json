@@ -1,7 +1,7 @@
 {
   "name": "dsh-noncoder-engineering",
-  "version": "1.1.0",
-  "description": "DSH plugin: noncoder engineering — technical decisions for non-coders, non-blocking execution, final report",
+  "version": "1.2.0",
+  "description": "DSH plugin: noncoder engineering v1.2 — demo-first, plain-language decisions, non-blocking execution, backup/recovery, user acceptance",
   "type": "module",
   "exports": {
     ".": "./index.js",
