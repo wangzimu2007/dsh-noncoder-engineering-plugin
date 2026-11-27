@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Noncoder engineering",
-    "description": "Turn product ideas into working software without technical questions. v1.3: demo-first, plain-language decisions, scope lock, backup/restore, user acceptance, natural-language goal triggers.",
+    "description": "Turn product ideas into working software without technical questions. v1.4: automatic stage review gate, Chinese review triggers, demo-first, plain-language decisions, scope lock, backup/restore, user acceptance.",
     "detail": "docs/DETAIL.md"
   }
 }

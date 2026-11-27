@@ -1,8 +1,14 @@
 # dsh-noncoder-engineering
 
-DSH Host-only plugin for the **noncoder engineering** skill, version 1.3.
+DSH Host-only plugin for the **noncoder engineering** skill, version 1.4.
 
 It registers an embedded skill with `ctx.skills.register()` so DSH users can install one plugin instead of copying a skill directory manually.
+
+## v1.4 features
+
+- Automatic stage review gate with a fresh read-only reviewer subagent
+- Chinese review triggers and false-positive exclusions
+- BLOCKER findings must be fixed before the next stage
 
 ## v1.3 features
 
@@ -72,6 +78,7 @@ index.js
 skill/SKILL.md
 skill/templates/*.md
 skill/references/GOAL-TRIGGERS.md
+skill/references/REVIEW-GATE.md
 locale/en.json
 locale/zh.json
 docs/DETAIL.md

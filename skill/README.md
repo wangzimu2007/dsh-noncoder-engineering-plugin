@@ -1,6 +1,6 @@
 # noncoder-engineering
 
-**非程序员工程助手 v1.3** — 给不写代码、只负责产品想法的人用的 DSH 技能。
+**非程序员工程助手 v1.4** — 给不写代码、只负责产品想法的人用的 DSH 技能。
 
 目标不是让 Agent 更会写代码，而是让它：
 
@@ -17,6 +17,16 @@
 - 只问产品，不问技术
 - 只有四类阻塞才停：破坏性操作、账号/付费/法律、两个互斥产品方向、验收完全不清
 - 有 `/goal` 或完整任务说明时：直接跑完，最后再报告
+
+## v1.4 新增：自动阶段审查
+
+- 长任务每个里程碑后自动起 fresh reviewer
+- 先跑测试，再审查逻辑 bug、边界、安全与验收不符
+- BLOCKER 不修完不能进入下一阶段
+- 中文触发：审查一下 / 代码审查 / 复查逻辑 / 检查有没有 bug / 看看有没有安全问题
+- 明确排除：检查配置 / 检查环境 / 检查文件 / 检查端口 / 看看日志
+- 审查日志写入 `.noncoder/REVIEWS/`
+- 详细规则见 `references/REVIEW-GATE.md`
 
 ## v1.3 新增：自然语言 goal 触发
 
@@ -97,6 +107,8 @@ C:\Users\<你>\.dsh\skills\noncoder-engineering
 | `templates/ACCEPTANCE.md` | 用户验收清单 |
 | `templates/ASSUMPTIONS.md` | 技术假设 |
 | `templates/OPEN_QUESTIONS.md` | 不阻塞的问题 |
+| `templates/REVIEW.md` | 阶段审查记录 |
+| `references/REVIEW-GATE.md` | 自动审查门禁规则 |
 
 ## DSH 插件版
 
